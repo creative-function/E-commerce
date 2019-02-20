@@ -1,0 +1,197 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 2. Content ================================= */
+header {
+  background-color: white;
+  padding: 20px;
+}
+
+header .content {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header h1 .logo {
+  width: 5%;
+}
+
+header nav {
+  text-align: right;
+}
+
+header nav .hamburger {
+  width: 32px;
+  margin-top: 25px;
+}
+
+header nav .hamburger div {
+  height: 6.4px;
+  margin-bottom: 6.4px;
+  background-color: #D71F26;
+}
+
+header nav ul {
+  display: none;
+}
+
+header.nav_open nav ul {
+  display: block;
+}
+
+header.nav_open nav .hamburger div {
+  background-color: orange;
+}
+
+.slideshow {
+  width: 1200px;
+  height: 800px;
+  border: 1px solid black;
+  position: relative;
+  left: 20%;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+.dots div {
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.dots div.active {
+  background-color: #ffffff;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 22pt;
+  margin: 15px 0;
+}
+
+.content ul {
+  margin-left: 5%;
+  line-height: 150%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.content ul li {
+  display: block;
+  -ms-flex-preferred-size: 33.3333333%;
+  flex-basis: 33.3333333%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.content ul li button {
+  width: 30%;
+  height: 30px;
+  background-color: orange;
+}
+
+/*# sourceMappingURL=main.css.map */

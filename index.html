@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title> Sit 'n Stay Pet Supplies' </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="dist/css/main.css">
+
+		<!--
+			Do I work in src or dist? Good question. 
+			
+			First of all, if you're a newbie and you don't want to worry about any of this 
+			Prepros or Gulp stuff, or scss, or browser-syncing, just do everything in dist.
+			In fact, just delete the src folder.
+			
+			If you're a geek and want to get into it, here's some background...
+			
+			Prepros and Gulp do mostly the same things. Prepros is a GUI (it's pretty), 
+			Gulp is a CLI (it's in the terminal, and it's ugly).
+
+			Both will watch your files, and where appropriate, they will error-check and 
+			compile them from one format to another. To stay organized, we have to 
+			split things up between the files we write: the *source* files in "src"; 
+			and the files they become: the files that get *distributed* on the web, in "dist".
+		
+			So src/scss files become dist/css files,
+			And src/js files become dist/js files (that have been compiled down to ES5),
+			And src/img files become dist/img files (that have been compressed for you).
+
+			Anything that doesn't need compiling/compressing/error-checking (plugins, video, fonts, etc), 
+			just put straight in *dist*. 
+			
+			One way to remember it is: you're only going to distribute *dist*. You keep the source files 
+			to yourself, hidden from the world.
+
+			Go here to learn more about src and dist:
+				https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders
+			Or here for detailed instructions on setting up the gulp command line helper.
+				https://github.com/CreativeCircus/circus-starter
+
+			- Chris Silich
+		-->
+		
+	</head>
+	<body>
+
+		<header>
+	
+			<h1>
+				<img class="logo" src="src/img/logo.png">
+			</h1>
+			<nav>
+				<div class="hamburger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<ul>
+					<li>Home</li>
+					<li>Dogs</li>
+					<li>Cats</li>
+					<li>Birds</li>
+					<li>Sale</li>
+				</ul>
+			</nav>
+			<!-- <div class="cf"></div> -->
+		
+		</header>
+		<p>Sit.Stay.Save.Good Boy.</p>
+		
+		<div class="slideshow">
+			<!--slides here thru js-->
+			<!-- <img src="http://images4.fanpop.com/image/photos/16100000/Cute-Kitten-kittens-16123151-1280-800.jpg"> -->
+		
+			<div class="dots">
+						
+			</div>
+
+		</div>
+
+		<button class="prev"">LAST</button>
+		<button class="next"">NEXT</button>
+		
+		<div class="content">
+
+		
+			<label for="pet-select">Choose a pet:</label>
+
+			<select id="pet-select">
+				<option value="">--Please choose an option--</option>
+				<option value="dog">Dog</option>
+				<option value="cat">Cat</option>
+				<option value="bird">Bird</option>
+				
+			</select>
+
+			<label for="price-sorting">Sort By:</label>
+
+			<select id="price-sorting">
+				<option value="">--Please choose an option--</option>
+				<option value="price-lowest">Price: (Lowest-Highest)</option>
+				<option value="price-highest">Price: (Highest-Lowest)</option>
+				<option value="a-z">Alphabetical Order</option>
+				
+			</select>
+
+			<h1>DOG FOOD SALE</h1>
+			<ul class="inventory">
+				
+			</ul>
+		</div>
+
+		<script src="dist/js/data.js"></script>
+		<script src="dist/js/main.js"></script>
+
+	</body>
+</html>
